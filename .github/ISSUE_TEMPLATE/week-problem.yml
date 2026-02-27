@@ -1,0 +1,32 @@
+name: 📚 주차별 문제 리스트
+description: 매주 풀이할 알고리즘 문제를 선정하는 이슈입니다.
+title: "📅 [WeekXX] 알고리즘 문제 선정"
+labels: ["week-problem"]
+
+body:
+  - type: input
+    id: week
+    attributes:
+      label: 📅 주차
+      description: "이번 주차가 몇 주차인지 입력해주세요."
+      placeholder: "예) Week01"
+    validations:
+      required: true
+
+  - type: input
+    id: topic
+    attributes:
+      label: 📕 이번 주 주제
+      description: "이번 주에 집중할 알고리즘 주제를 입력해주세요."
+      placeholder: "예) Array / String / 자유 주제"
+    validations:
+      required: true
+
+  - type: input
+    id: lv2_assignees
+    attributes:
+      label: ⌨️ 이번 주 Lv.2 담당자
+      description: "로테이션 순서에 맞게 이번 주 Lv.2를 담당할 3명을 입력해주세요."
+      placeholder: "예) 백현빈, 임현빈, 조수빈"
+    validations:
+      required: true
